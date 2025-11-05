@@ -1,0 +1,7 @@
+//3.12 Describe the two ways in which control statements can be combined. 
+
+Describe the two ways in which control statements can be combined.
+
+Nesting: Placing one control statement inside another (e.g., an if inside a while loop).
+
+Sequential combination: Writing control statements one after another in a sequence so they execute in order.

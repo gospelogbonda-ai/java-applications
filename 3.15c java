@@ -1,0 +1,11 @@
+// (c)
+// errors:
+// - Missing braces { } for multiple statements inside the while loop.
+// - Without braces, only 'total += x;' is in the loop, while '++x;' runs outside.
+// - This causes an infinite loop or incorrect result.
+
+// correct code:
+while (x <= 100) {
+    total += x;
+    ++x;
+}

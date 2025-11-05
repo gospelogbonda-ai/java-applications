@@ -1,0 +1,4 @@
+//3.14 What is the difference between preincrementing and postincrementing a variable? 
+Preincrement (++x): The variable is incremented first, then its new value is used in the expression.
+
+Postincrement (x++): The variable’s current value is used first, then it is incremented afterward.

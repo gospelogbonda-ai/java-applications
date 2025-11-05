@@ -1,0 +1,12 @@
+// (b)
+// errors: 
+// - Variable 'total' is declared but not initialized before use.
+// - 'total += x;' will cause an error because 'total' has no starting value.
+
+// correct code:
+int x = 1, total = 0;
+while (x <= 10) {
+    total += x;
+    ++x;
+}
+System.out.println("Total is: " + total);

@@ -1,0 +1,6 @@
+//3.11 Explain what happens when a Java program attempts to divide one integer by another. What happens to the fractional part of the calculation? How can you avoid that outcome? 
+When dividing two integers in Java, the fractional part is discarded — the result is an integer (truncated toward zero).
+Example: 5 / 2 gives 2, not 2.5.
+
+To avoid losing the fractional part, use floating-point division by making at least one operand a double or float.
+Example: 5.0 / 2 gives 2.5.

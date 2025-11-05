@@ -1,0 +1,11 @@
+// (d)
+// errors:
+// - Missing closing brace '}' for the while loop.
+// - Logical error: using '++y' will increase y, causing an infinite loop if y > 0.
+// - Should use '--y' instead, so the loop decreases y and eventually ends.
+
+// correct code:
+while (y > 0) {
+    System.out.println(y);
+    --y;
+}

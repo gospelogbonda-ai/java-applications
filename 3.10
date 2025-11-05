@@ -1,0 +1,9 @@
+//3.10 Compare and contrast the if single-selection statement and the while repetition statement. How are these two statements similar? How are they different? 
+Similarity:
+Both use a condition (a Boolean expression) to determine whether a statement or block of code should execute.
+
+Difference:
+
+The if statement executes its body only once if the condition is true.
+
+The while statement executes its body repeatedly as long as the condition remains true.

@@ -1,0 +1,42 @@
+// Pseudocode
+//
+// 1. Set counter to 1
+// 2. Prompt the user to enter the first number
+// 3. Read the first number and set it as largest
+// 4. While counter < 10
+//      a. Increase counter by 1
+//      b. Prompt the user to enter the next number
+//      c. Read the number
+//      d. If number > largest, then set largest = number
+// 5. Display "The largest number is" followed by the value of largest
+
+import java.util.Scanner;
+
+public class FindLargestNumber {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int counter = 1;
+        int number;
+        int largest;
+
+        // Prompt for and read the first number, use it to initialize 'largest'
+        System.out.print("Enter number 1: ");
+        number = input.nextInt();
+        largest = number;
+
+        // Read the remaining 9 numbers
+        while (counter < 10) {
+            counter++;
+            System.out.printf("Enter number %d: ", counter);
+            number = input.nextInt();
+
+            if (number > largest) {
+                largest = number;
+            }
+        }
+
+        System.out.printf("The largest number is: %d%n", largest);
+        input.close();
+    }
+}

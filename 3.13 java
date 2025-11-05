@@ -1,0 +1,44 @@
+// 3.13 What type of repetition would be appropriate for calculating the sum of the first 100 positive integers? 
+// What type would be appropriate for calculating the sum of an arbitrary number of positive integers? 
+// Briefly describe how each of these tasks could be performed.
+
+/* For the first 100 integers:
+A counter-controlled loop (like a for loop) is appropriate because the number of repetitions (100) is known in advance.
+Example:
+*/
+
+import java.util.Scanner; // needed for user input
+
+public class SumExample {
+    public static void main(String[] args) {
+
+        // Sum of the first 100 positive integers
+        int sum1 = 0;
+        for (int i = 1; i <= 100; i++)
+            sum1 += i;
+        System.out.println("Sum of the first 100 positive integers: " + sum1);
+
+        /* For an arbitrary number of positive integers:
+        A sentinel-controlled loop (like a while loop) is appropriate because 
+        the number of inputs is not known in advance.
+        The user can enter a special value (for example, -1) to stop entering numbers.
+        Example:
+        */
+
+        Scanner input = new Scanner(System.in);
+        int sum2 = 0;
+        int number;
+
+        System.out.println("Enter positive integers to sum (enter -1 to stop):");
+        number = input.nextInt();
+
+        while (number != -1) {  // sentinel value
+            sum2 += number;
+            number = input.nextInt();
+        }
+
+        System.out.println("Sum of entered positive integers: " + sum2);
+        input.close();
+    }
+}
+

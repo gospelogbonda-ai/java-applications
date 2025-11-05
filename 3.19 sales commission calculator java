@@ -1,0 +1,39 @@
+// (Sales Commission Calculator)
+// A large company pays its salespeople on a commission basis. 
+// The salespeople receive $200 per week plus 9% of their gross sales for that week.
+// For example, a salesperson who sells $5,000 worth of merchandise in a week receives 
+// $200 plus 9% of $5000, or a total of $650. 
+// Develop a Java application that inputs one salesperson’s items sold for last week 
+// and calculates and displays that salesperson’s earnings. 
+// There’s no limit to the number of items that can be sold.
+
+import java.util.Scanner;
+
+public class SalesCommissionCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double grossSales = 0.0;
+        double itemValue;
+
+        System.out.print("Enter value of item sold (-1 to end): ");
+        itemValue = input.nextDouble();
+
+        // Sentinel-controlled loop to input all item values
+        while (itemValue != -1) {
+            grossSales += itemValue;
+
+            System.out.print("Enter value of next item sold (-1 to end): ");
+            itemValue = input.nextDouble();
+        }
+
+        // Calculate total earnings
+        double earnings = 200 + (0.09 * grossSales);
+
+        // Display result
+        System.out.printf("Total sales: $%.2f%n", grossSales);
+        System.out.printf("Earnings for the week: $%.2f%n", earnings);
+
+        input.close();
+    }
+}
