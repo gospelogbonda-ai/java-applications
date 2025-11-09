@@ -1,0 +1,12 @@
+// 4.6 Compare and contrast the while and for repetition statements.
+// Answer:
+//
+// Similarities:
+// - Both the while and for statements are used to execute a set of statements repeatedly
+//   as long as a condition is true.
+//
+// Differences:
+// - The while statement is used when the number of repetitions is not known in advance.
+// - The for statement is used when the number of repetitions is known before the loop starts.
+// - In a for loop, the initialization, condition, and increment are all written in one line.
+// - In a while loop, these elements are usually written separately before and inside the loop.

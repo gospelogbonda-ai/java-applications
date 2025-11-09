@@ -1,0 +1,19 @@
+// 4.12 – Calculating the Product of Odd Integers
+// Answer/Explanation:
+// - Multiply all odd integers from 1 to 15.
+// - Use a variable (product) initialized to 1.
+// - Loop through numbers 1 to 15, check if odd, multiply.
+
+public class ProductOfOddIntegers {
+    public static void main(String[] args) {
+        int product = 1;
+
+        for (int i = 1; i <= 15; i++) {
+            if (i % 2 != 0) { // check if the number is odd
+                product *= i; // multiply
+            }
+        }
+
+        System.out.println("The product of odd integers from 1 to 15 is: " + product);
+    }
+}

@@ -1,0 +1,47 @@
+// 4.31 – Tax Plan Alternatives; The "FairTax"
+// Answer/Explanation:
+// - Prompt the user to enter expenses in different categories (housing, food, clothing, etc.).
+// - Calculate a 23% tax on the total expenses.
+// - Display the estimated FairTax for the user.
+
+import java.util.Scanner;
+
+public class FairTaxCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        double housing, food, clothing, transportation, education, healthcare, vacations;
+
+        // Prompt user for expenses
+        System.out.print("Enter your housing expenses: ");
+        housing = input.nextDouble();
+
+        System.out.print("Enter your food expenses: ");
+        food = input.nextDouble();
+
+        System.out.print("Enter your clothing expenses: ");
+        clothing = input.nextDouble();
+
+        System.out.print("Enter your transportation expenses: ");
+        transportation = input.nextDouble();
+
+        System.out.print("Enter your education expenses: ");
+        education = input.nextDouble();
+
+        System.out.print("Enter your healthcare expenses: ");
+        healthcare = input.nextDouble();
+
+        System.out.print("Enter your vacation expenses: ");
+        vacations = input.nextDouble();
+
+        // Calculate total expenses
+        double totalExpenses = housing + food + clothing + transportation + education + healthcare + vacations;
+
+        // Calculate FairTax (23% of total expenses)
+        double fairTax = totalExpenses * 0.23;
+
+        System.out.println("Your estimated FairTax is: $" + String.format("%.2f", fairTax));
+
+        input.close();
+    }
+}

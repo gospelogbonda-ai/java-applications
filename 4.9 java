@@ -1,0 +1,42 @@
+// Chapter 4 Exercise 4.9
+// Find and correct the error(s) in each of the following segments of code.
+
+
+// 4.9(a)
+// Error:
+// - The 'For' keyword should be lowercase 'for'.
+// - The control expressions in a for loop must be separated by semicolons (;), not commas (,).
+// - The loop increments i (i++) but the condition is i >= 1, which causes an infinite loop.
+//
+// Correction:
+// - Use lowercase 'for'.
+// - Replace commas with semicolons.
+// - Change i++ to i-- to count downward.
+
+
+// 4.9(b)
+// Error:
+// - Missing break statements in the switch.
+// - Without break, both "Even integer" and "Odd integer" may print.
+//
+// Correction:
+// - Add break; after each case to prevent fall-through.
+
+
+// 4.9(c)
+// Error:
+// - The loop is meant to output odd integers from 19 down to 1.
+// - Using i += 2 increases i instead of decreasing it, causing an infinite loop.
+//
+// Correction:
+// - Change i += 2 to i -= 2 to count down by 2 each iteration.
+
+
+// 4.9(d)
+// Error:
+// - 'While' in the do...while loop must be lowercase 'while'.
+// - The condition counter < 100 stops before printing 100.
+//
+// Correction:
+// - Change 'While' to 'while'.
+// - Use counter <= 100 to include 100 in the output.

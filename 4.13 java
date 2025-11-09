@@ -1,0 +1,23 @@
+// 4.13 – Factorials
+// Answer/Explanation:
+// - Calculate factorials of integers from 1 to 20.
+// - Use type long to store results because factorials grow quickly.
+// - Display results in a tabular format.
+// - Difficulty with calculating 100!:
+//   long cannot store such a large number (it will overflow). You would need BigInteger.
+
+public class Factorials {
+    public static void main(String[] args) {
+        System.out.println("Number\tFactorial");
+
+        for (int n = 1; n <= 20; n++) {
+            long factorial = 1;
+
+            for (int i = 1; i <= n; i++) {
+                factorial *= i;
+            }
+
+            System.out.println(n + "\t" + factorial);
+        }
+    }
+}

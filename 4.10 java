@@ -1,0 +1,10 @@
+// 4.10 What does the following program do?
+//
+// Answer:
+// The program prints 10 rows of '@' symbols,
+// with each row containing 5 '@' symbols.
+//
+// Explanation:
+// The outer for loop (i) runs 10 times, representing the rows.
+// The inner for loop (j) runs 5 times for each row, printing '@' without a newline.
+// After the inner loop finishes, System.out.println() moves the cursor to the next line.

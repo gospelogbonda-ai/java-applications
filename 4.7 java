@@ -1,0 +1,15 @@
+// 4.7 Discuss a situation in which it would be more appropriate to use a do…while statement
+// than a while statement. Explain why.
+// Answer:
+//
+// The do...while statement is more appropriate when the loop body must execute at least once,
+// regardless of whether the condition is true or false.
+//
+// Example situation:
+// When displaying a menu to a user — the menu should appear at least once before asking
+// if the user wants to see it again.
+//
+// Reason:
+// In a while loop, the condition is checked first, so the loop might not run at all.
+// In a do...while loop, the body executes first, and the condition is checked afterward,
+// ensuring the code runs at least once.

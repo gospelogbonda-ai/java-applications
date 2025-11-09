@@ -1,0 +1,35 @@
+// 4.32 – Facebook User Base Growth
+// Answer/Explanation:
+// - Use compound growth formula: futureValue = presentValue * (1 + growthRate)^months
+// - Solve for the number of months needed to reach target users.
+
+public class FacebookGrowth {
+    public static void main(String[] args) {
+        double currentUsers = 1_000_000_000; // 1 billion
+        double growthRate = 0.04; // 4% per month
+        double target1 = 1_500_000_000; // 1.5 billion
+        double target2 = 2_000_000_000; // 2 billion
+
+        int months1 = 0;
+        double users = currentUsers;
+
+        // Calculate months to reach 1.5 billion
+        while (users < target1) {
+            users *= (1 + growthRate);
+            months1++;
+        }
+
+        // Reset users for 2 billion calculation
+        users = currentUsers;
+        int months2 = 0;
+
+        // Calculate months to reach 2 billion
+        while (users < target2) {
+            users *= (1 + growthRate);
+            months2++;
+        }
+
+        System.out.println("Months to reach 1.5 billion users: " + months1);
+        System.out.println("Months to reach 2 billion users: " + months2);
+    }
+}

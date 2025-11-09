@@ -1,0 +1,27 @@
+// 4.14 – Modified Compound-Interest Program
+// Answer/Explanation:
+// - Repeat the compound-interest calculation for interest rates of 5% to 10%.
+// - Use a for loop to vary the interest rate.
+// - Display results for each year for each interest rate.
+
+public class ModifiedCompoundInterest {
+    public static void main(String[] args) {
+        double principal = 1000.0; // initial principal
+        int years = 10; // number of years
+
+        System.out.println("Year\t5%\t6%\t7%\t8%\t9%\t10%");
+
+        // Loop through each year
+        for (int year = 1; year <= years; year++) {
+            System.out.print(year + "\t");
+
+            // Loop through each interest rate
+            for (int rate = 5; rate <= 10; rate++) {
+                double amount = principal * Math.pow(1 + rate / 100.0, year);
+                System.out.print(String.format("%.2f", amount) + "\t");
+            }
+
+            System.out.println(); // new line after each year
+        }
+    }
+}

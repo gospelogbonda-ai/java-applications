@@ -1,0 +1,15 @@
+// 4.8 Compare and contrast the break and continue statements.
+// Answer:
+//
+// Both break and continue are used to alter the normal flow of loops.
+//
+// Differences:
+// - The break statement immediately terminates the entire loop and transfers control
+//   to the statement that follows the loop.
+//
+// - The continue statement skips the remaining statements in the current iteration
+//   and jumps to the next iteration of the loop.
+//
+// Example:
+// break → exits the loop completely.
+// continue → skips to the next iteration without finishing the current one.
